@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="weatherStyle/weather.css" />
+</head>
+<body>
+
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Weather App</h2>
+      <button data-screen="home">Home</button>
+      <button data-screen="forecast">Forecast</button>
+      <button data-screen="favorites">Favorites</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      
+      <!-- Search -->
+      <section id="search-section"></section>
+
+      <!-- Home -->
+   <section id="home" class="screen active">
+  <h1 class="welcome-text">Welcome to Weather Dashboard</h1>
+  <p class="welcome-subtext">
+    Search any city to get real-time weather updates
+  </p>
+  <div id="current-weather"></div>
+</section> 
+
+      <!-- Forecast -->
+      <section id="forecast" class="screen">
+        <div id="forecast-container"></div>
+      </section>
+
+      <!-- Favorites -->
+    <section id="favorites" class="screen">
+  <h2 class="favorites-heading"> My Favorite Cities</h2>
+  <div id="favorites-container"></div>
+</section>
+
+      <p id="error" class="error"></p>
+    </main>
+  </div>
+
+  <script src="weatherLogic/weather.js" type="module"></script>
+</body>
+</html>

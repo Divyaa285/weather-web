@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef2f5;
+}
+/* dashboar */
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  background: #334155;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  background: #475569;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+
+.screen {
+  display: none;
+}
+
+.screen.active {
+  display: block;
+}
+
+/* home-screen */
+.welcome-text {
+  margin-top: 0;
+  font-size: 28px;
+  color: #1e293b;
+}
+
+.welcome-subtext {
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  outline: none;
+}
+
+.search-box input:focus {
+  border-color: #3b82f6;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+  background-color: #2563eb;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    background-color: #e7eefc;
+color: black;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #0f172a;
+}
+
+.card p {
+  color: #334155;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+/* forecast-screen*/
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.forecast-heading {
+  margin-top: 0;
+  color: #1e293b;
+}
+
+.temp-red {
+  color: #dc2626;      
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.forecast-card {
+  text-align: center;
+}
+.forecast-card:hover {
+  background-color: #fef2f2;
+}
+/* favorite-screen */
+.favorite-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.favorite-item:hover {
+  background-color: #f1f5f9;
+}
+
+.favorite-city {
+  font-weight: bold;
+  color: #1e293b;
+}
+.favorite-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.favorite-temp {
+  color: #dc2626;
+  font-weight: bold;
+}
+.favorites-heading {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #1e293b;
+  font-size: 22px;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: red;
+}
+
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
